@@ -73,7 +73,7 @@ export default function Gallery() {
           <section className="mb-10 md:mb-14">
             <div className="inline-flex items-center gap-2 rounded-full bg-[#7B1129]/5 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#7B1129] mb-4">
               <Sparkles className="h-4 w-4" />
-              Kandyan Dance · Gallery
+              Ceylon Dance Company · Gallery
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-[#7B1129] to-black bg-clip-text text-transparent">
               Moments from France
@@ -227,7 +227,7 @@ export default function Gallery() {
 
             <div className="px-4 py-3 md:px-6 md:py-4 flex items-center justify-between text-[11px] md:text-xs text-white/80">
               <span>
-                Kandyan Dance Academy · France · Preserving Sri Lankan heritage on European stages.
+                Ceylon Dance Company · UK · Preserving Sri Lankan heritage on European stages.
               </span>
               <button
                 type="button"

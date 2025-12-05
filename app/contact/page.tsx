@@ -62,7 +62,7 @@ export default function Contact() {
           <section className="mb-10 md:mb-14">
             <div className="inline-flex items-center gap-2 rounded-full bg-[#7B1129]/5 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#7B1129] mb-4">
               <MessageCircle className="h-4 w-4" />
-              Contact · Kandyan Dance France
+              Contact · Ceylon Dance Company UK 
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-[#7B1129] to-black bg-clip-text text-transparent">
               Contact & Chat With Us
