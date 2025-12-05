@@ -11,23 +11,22 @@ export const metadata: Metadata = {
   title: "Kandyan Dance - Learn Traditional Sri Lankan Dance",
   description:
     "Discover the art of Kandyan dance. Professional classes, courses, and registration for aspiring dancers.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/c.jpg",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "/c.jpg",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "/c.jpg",
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/c.jpg",
   },
 }
 
