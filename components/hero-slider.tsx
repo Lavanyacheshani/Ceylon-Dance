@@ -82,15 +82,14 @@ export default function HeroSlider() {
             backgroundPosition: "center",
           }}
         >
-          {/* Softer overlays so image is visible */}
+          {/* Soft overlays */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/60" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80" />
-          {/* Burgundy accent wash */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#7B1129aa,transparent_60%)]" />
         </div>
       ))}
 
-      {/* Floating burgundy glow accents */}
+      {/* Glow accents */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -top-24 right-10 w-72 h-72 rounded-full bg-[#7B1129]/30 blur-3xl" />
         <div className="absolute bottom-[-120px] left-20 w-80 h-80 rounded-full bg-white/10 blur-3xl" />
@@ -105,12 +104,10 @@ export default function HeroSlider() {
             </p>
 
             <h1 className="mb-4 text-4xl font-bold text-white drop-shadow-lg md:text-6xl leading-tight">
-              {/* Main dynamic title */}
               <span className="block text-white">
                 {slides[currentSlide].title}
               </span>
 
-              {/* ✨ New prettier line instead of “Traditional Spirit, Modern Stage” */}
               <span className="mt-3 inline-block bg-gradient-to-r from-[#FFE4EA] via-[#F4B7C2] to-[#FFF4D0] bg-clip-text text-transparent text-[clamp(1.75rem,3vw,2.4rem)] font-extrabold tracking-tight">
                 Heritage in Motion · Ceylon Dance Company in France
               </span>
@@ -139,18 +136,16 @@ export default function HeroSlider() {
 
             <div className="mt-8 flex items-center gap-4 text-sm text-white/70">
               <div className="h-[1px] w-16 bg-white/50" />
-              <p>
-                Authentic Kandyan dance training in the heart of France.
-              </p>
+              <p>Authentic Kandyan dance training in the heart of France.</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Previous / Next buttons */}
+      {/* Previous / Next buttons - HIDDEN on mobile */}
       <button
         onClick={handlePrevSlide}
-        className="group absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/40 bg-black/40 p-3 text-white backdrop-blur-md transition-all duration-200 hover:bg-black/70 md:left-8"
+        className="hidden md:block group absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/40 bg-black/40 p-3 text-white backdrop-blur-md transition-all duration-200 hover:bg-black/70 md:left-8"
         aria-label="Previous slide"
       >
         <ChevronLeft className="h-6 w-6 group-hover:-translate-x-0.5 transition-transform" />
@@ -158,7 +153,7 @@ export default function HeroSlider() {
 
       <button
         onClick={handleNextSlide}
-        className="group absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/40 bg-black/40 p-3 text-white backdrop-blur-md transition-all duration-200 hover:bg-black/70 md:right-8"
+        className="hidden md:block group absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/40 bg-black/40 p-3 text-white backdrop-blur-md transition-all duration-200 hover:bg-black/70 md:right-8"
         aria-label="Next slide"
       >
         <ChevronRight className="h-6 w-6 group-hover:translate-x-0.5 transition-transform" />
@@ -172,8 +167,8 @@ export default function HeroSlider() {
               key={index}
               onClick={() => goToSlide(index)}
               className={`transition-all ${index === currentSlide
-                ? "h-2 w-5 rounded-full bg-white"
-                : "h-2 w-2 rounded-full bg-white/50 hover:bg-white/80"
+                  ? "h-2 w-5 rounded-full bg-white"
+                  : "h-2 w-2 rounded-full bg-white/50 hover:bg-white/80"
                 }`}
               aria-label={`Go to slide ${index + 1}`}
             />
