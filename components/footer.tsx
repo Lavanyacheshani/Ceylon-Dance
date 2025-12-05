@@ -1,9 +1,35 @@
 "use client"
 
-import { Facebook, Instagram, Youtube, Mail, MapPin, Phone } from "lucide-react"
+import { Facebook, Instagram, Youtube, Mail, MapPin, Phone, MessageCircle } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+
+  const socialLinks = [
+    {
+      name: "Facebook",
+      icon: Facebook,
+      url: "https://www.facebook.com/share/17DHwcR6Lp/?mibextid=wwXIfr",
+    },
+    {
+      name: "Instagram",
+      icon: Instagram,
+      url: "https://instagram.com/ceylon_dancers_company?igsh=d3I3ZzJwMG1qM3Fw&utm_source=qr",
+    },
+    {
+      name: "TikTok",
+      icon: MessageCircle,
+      url: "https://tiktok.com/@sithu_amarasingha?_t=8oUYDkhrQCf&_r=1",
+    },
+    {
+      name: "YouTube",
+      icon: Youtube,
+      url: "https://youtube.com/@sithudanceodyssey2024?si=ISUjbCBEsuIyASgb",
+    },
+  ]
+
+  const whatsappNumber = "+447498905311"
+  const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, "")}`
 
   return (
     <footer className="relative bg-gradient-to-br from-[#7B1129] via-[#5A0E1E] to-black text-white pt-20 pb-10 overflow-hidden">
@@ -66,16 +92,28 @@ export default function Footer() {
             </ul>
 
             {/* Social Icons */}
-            <div className="mt-6 flex items-center gap-4">
-              {[Facebook, Instagram, Youtube].map((Icon, idx) => (
+            <div className="mt-6 flex items-center gap-4 flex-wrap">
+              {socialLinks.map((social) => (
                 <a
-                  key={idx}
-                  href="#"
-                  className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 backdrop-blur-md border border-white/10"
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={social.name}
+                  className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 backdrop-blur-md border border-white/10 hover:scale-110"
                 >
-                  <Icon size={18} className="text-white" />
+                  <social.icon size={18} className="text-white" />
                 </a>
               ))}
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="WhatsApp"
+                className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300 backdrop-blur-md border border-white/10 hover:scale-110"
+              >
+                <MessageCircle size={18} className="text-white" />
+              </a>
             </div>
           </div>
         </div>
