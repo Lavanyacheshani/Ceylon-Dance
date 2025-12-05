@@ -101,7 +101,7 @@ export default function HeroSlider() {
         <div className="mx-auto flex h-full max-w-6xl items-center px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl text-left">
             <p className="mb-4 inline-block rounded-full border border-white/30 bg-black/30 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-white/80">
-              Kandyan Dance Academy · France
+              Ceylon Dance Company · UK
             </p>
 
             <h1 className="mb-4 text-4xl font-bold text-white drop-shadow-lg md:text-6xl leading-tight">
@@ -112,7 +112,7 @@ export default function HeroSlider() {
 
               {/* ✨ New prettier line instead of “Traditional Spirit, Modern Stage” */}
               <span className="mt-3 inline-block bg-gradient-to-r from-[#FFE4EA] via-[#F4B7C2] to-[#FFF4D0] bg-clip-text text-transparent text-[clamp(1.75rem,3vw,2.4rem)] font-extrabold tracking-tight">
-                Heritage in Motion · Kandyan Dance in France
+                Heritage in Motion · Ceylon Dance Company in France
               </span>
             </h1>
 

@@ -361,7 +361,7 @@ function PageLoader() {
 
         <div className="text-center">
           <h1 className="mb-2 bg-gradient-to-r from-[#7B1129] to-black bg-clip-text text-3xl font-bold text-transparent">
-            Kandyan Dance Academy
+            Ceylon Dance Company UK
           </h1>
           <p className="text-neutral-600 text-lg">Preparing your dance journey...</p>
         </div>

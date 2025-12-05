@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
           {/* About */}
           <div>
-            <h3 className="text-xl font-bold mb-4 tracking-wide">Kandyan Dance Academy</h3>
+            <h3 className="text-xl font-bold mb-4 tracking-wide">Ceylon Dance Company UK </h3>
             <p className="text-white/80 leading-relaxed text-sm">
               Preserving Sri Lanka’s rich cultural heritage through master-level Kandyan dance training,
               professional programs, and passionate community engagement.
@@ -53,13 +53,15 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4 tracking-wide">Contact</h3>
             <ul className="space-y-3 text-sm text-white/80">
               <li className="flex items-center gap-2">
-                <Mail size={16} className="text-white/70" /> info@kandyandance.com
+                <Mail size={16} className="text-white/70" /> itsmesithumini@gmail.com
+
               </li>
               <li className="flex items-center gap-2">
-                <Phone size={16} className="text-white/70" /> +94 123 456 789
+                <Phone size={16} className="text-white/70" /> +44 7498 905311
+
               </li>
               <li className="flex items-center gap-2">
-                <MapPin size={16} className="text-white/70" /> Colombo, Sri Lanka
+                <MapPin size={16} className="text-white/70" /> London, United Kingdom
               </li>
             </ul>
 
