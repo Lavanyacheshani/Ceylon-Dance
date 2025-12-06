@@ -163,10 +163,10 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "Beginner", price: "LKR 29,000", duration: "8 weeks", students: "12 / 20 seats", level: "No experience " },
-              { name: "Intermediate", price: "LKR 36,000", duration: "8 weeks", students: "18 / 20 seats", level: "Some training" },
-              { name: "Advanced", price: "LKR 44,000", duration: "8 weeks", students: "15 / 20 seats", level: "Stage-ready" },
-              { name: "Professional", price: "LKR 59,000", duration: "12 weeks", students: "8 / 15 seats", level: "Teaching" },
+              { name: "Beginner", price: "€ 20", duration: "8 weeks", students: "12 / 20 seats", level: "No experience " },
+              { name: "Intermediate", price: "€ 25", duration: "8 weeks", students: "18 / 20 seats", level: "Some training" },
+              { name: "Advanced", price: "€ 30", duration: "8 weeks", students: "15 / 20 seats", level: "Stage-ready" },
+              { name: "Professional", price: "€ 35", duration: "12 weeks", students: "8 / 15 seats", level: "Teaching" },
             ].map((course, idx) => (
               <div
                 key={idx}
