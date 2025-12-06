@@ -47,7 +47,7 @@ export default function Contact() {
     setChatMessage("")
   }
 
-  const whatsappNumber = "33612345678" // example France mobile number without + sign
+  const whatsappNumber = "447498905311" // example France mobile number without + sign
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     "Bonjour! I would like to know more about Kandyan dance classes in France.",
   )}`
@@ -62,7 +62,7 @@ export default function Contact() {
           <section className="mb-10 md:mb-14">
             <div className="inline-flex items-center gap-2 rounded-full bg-[#7B1129]/5 px-4 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#7B1129] mb-4">
               <MessageCircle className="h-4 w-4" />
-              Contact · Ceylon Dance Company UK 
+              Contact · Ceylon Dance Company UK
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-[#7B1129] to-black bg-clip-text text-transparent">
               Contact & Chat With Us
@@ -106,7 +106,7 @@ export default function Contact() {
                       <h3 className="text-sm font-semibold text-neutral-900">
                         Email
                       </h3>
-                      <p className="text-neutral-700">info@kandyandance.fr</p>
+                      <p className="text-neutral-700">itsmesithumini@gmail.com</p>
                     </div>
                   </div>
 
@@ -118,7 +118,7 @@ export default function Contact() {
                       <h3 className="text-sm font-semibold text-neutral-900">
                         Phone
                       </h3>
-                      <p className="text-neutral-700">+33 6 12 34 56 78</p>
+                      <p className="text-neutral-700">+44 7498 905311</p>
                     </div>
                   </div>
 
@@ -131,7 +131,7 @@ export default function Contact() {
                         Studio Locations
                       </h3>
                       <p className="text-neutral-700">
-                        Paris · Lyon · Marseille, France
+                        London, United Kingdom
                       </p>
                     </div>
                   </div>
@@ -267,7 +267,7 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-2.5 text-sm text-neutral-900 shadow-sm outline-none transition-all duration-200 focus:border-[#7B1129] focus:ring-2 focus:ring-[#7B1129]/20"
-                      placeholder="+33 6 12 34 56 78"
+                      placeholder="+44 7498 905311"
                     />
                   </div>
 

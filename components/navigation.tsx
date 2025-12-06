@@ -5,6 +5,13 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { Menu, X, ShoppingCart } from "lucide-react"
+import { Playfair_Display } from "next/font/google"
+
+// Elegant Font for Brand Name
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+})
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -32,13 +39,15 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/c.jpg"       // <-- Your logo from public/
+              src="/c.jpg"
               alt="Kandyan Dance Logo"
               width={45}
               height={45}
               className="rounded-full object-cover"
             />
-            <span className="text-xl font-bold text-primary hidden sm:inline">
+            <span
+              className={`${playfair.className} text-xl sm:text-2xl font-semibold text-primary hidden sm:inline`}
+            >
               Ceylon Dance
             </span>
           </Link>
