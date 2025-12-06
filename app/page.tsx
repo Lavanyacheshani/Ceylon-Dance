@@ -346,32 +346,41 @@ export default function Home() {
 
 function PageLoader() {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-white via-[#fdf2f5] to-white">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white/90 backdrop-blur-lg animate-fadeIn">
+      
+      {/* Soft ambient floating glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-10 right-10 h-64 w-64 rounded-full bg-[#7B1129]/12 blur-3xl" />
-        <div className="absolute bottom-0 left-10 h-72 w-72 rounded-full bg-[#7B1129]/10 blur-3xl" />
+        <div className="absolute top-20 left-10 h-60 w-60 bg-[#7B1129]/20 blur-3xl rounded-full animate-floatingSlow" />
+        <div className="absolute bottom-20 right-10 h-72 w-72 bg-black/10 blur-3xl rounded-full animate-floatingDelay" />
       </div>
 
-      <div className="relative flex flex-col items-center gap-8">
-        <div className="relative h-24 w-24">
-          <div className="absolute inset-0 rounded-full border-4 border-[#7B1129]/15" />
-          <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-[#7B1129] border-r-[#7B1129] animate-spin-slow" />
-          <div className="absolute inset-4 rounded-full bg-white/70 shadow-inner shadow-[#7B1129]/20" />
+      {/* Main Loader */}
+      <div className="relative flex flex-col items-center gap-8 animate-scaleIn">
+
+        {/* Glowing rotating ring */}
+        <div className="relative h-28 w-28 flex items-center justify-center">
+          <div className="absolute inset-0 rounded-full border-4 border-[#7B1129]/20" />
+          <div className="absolute inset-0 rounded-full border-[4px] border-transparent border-t-[#7B1129] animate-spin-slow" />
+          <div className="absolute inset-4 rounded-full bg-white/60 shadow-xl shadow-[#7B1129]/20 backdrop-blur-md" />
         </div>
 
+        {/* Brand Name */}
         <div className="text-center">
-          <h1 className="mb-2 bg-gradient-to-r from-[#7B1129] to-black bg-clip-text text-3xl font-bold text-transparent">
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-[#7B1129] to-black bg-clip-text text-transparent animate-fadeUp">
             Ceylon Dance Company UK
           </h1>
-          <p className="text-neutral-600 text-lg">Preparing your dance journey...</p>
+          <p className="text-neutral-700 text-lg mt-1 animate-fadeUp delay-150">
+            Preparing your dance journey...
+          </p>
         </div>
 
-        <div className="flex gap-2">
+        {/* Modern pulsating dots */}
+        <div className="flex gap-2 mt-2">
           {[0, 1, 2].map((i) => (
             <div
               key={i}
-              className="h-2 w-2 rounded-full bg-[#7B1129] animate-bounce"
-              style={{ animationDelay: `${i * 0.15}s` }}
+              className="h-3 w-3 rounded-full bg-[#7B1129] animate-pulseDot"
+              style={{ animationDelay: `${i * 0.18}s` }}
             />
           ))}
         </div>

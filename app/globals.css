@@ -107,6 +107,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -119,6 +120,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -126,11 +128,13 @@
 
 /* Pulse glow effect */
 @keyframes pulse-glow {
+
   0%,
   100% {
     opacity: 1;
     box-shadow: 0 0 20px rgba(139, 58, 58, 0.3);
   }
+
   50% {
     opacity: 0.8;
     box-shadow: 0 0 40px rgba(139, 58, 58, 0.6);
@@ -143,6 +147,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -155,6 +160,7 @@
     opacity: 0;
     transform: translateX(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -167,6 +173,7 @@
     opacity: 0;
     transform: translateX(20px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -179,6 +186,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -191,6 +199,7 @@
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -199,10 +208,12 @@
 
 /* Float effect for parallax */
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-15px);
   }
@@ -213,9 +224,11 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -223,10 +236,12 @@
 
 /* Glow text effect */
 @keyframes glow-text {
+
   0%,
   100% {
     text-shadow: 0 0 10px rgba(139, 58, 58, 0.3), 0 0 20px rgba(139, 58, 58, 0.2);
   }
+
   50% {
     text-shadow: 0 0 20px rgba(139, 58, 58, 0.6), 0 0 30px rgba(139, 58, 58, 0.4);
   }
@@ -237,15 +252,19 @@
   0% {
     background-image: url("/hero-kandyan-1.jpg");
   }
+
   25% {
     background-image: url("/hero-kandyan-2.jpg");
   }
+
   50% {
     background-image: url("/hero-kandyan-3.jpg");
   }
+
   75% {
     background-image: url("/hero-kandyan-4.jpg");
   }
+
   100% {
     background-image: url("/hero-kandyan-5.jpg");
   }
@@ -256,6 +275,7 @@
   0% {
     background-position: -1000px 0;
   }
+
   100% {
     background-position: 1000px 0;
   }
@@ -263,10 +283,12 @@
 
 /* Text glow pulse effect */
 @keyframes text-glow-pulse {
+
   0%,
   100% {
     text-shadow: 0 0 10px rgba(139, 58, 58, 0.4), 0 0 20px rgba(139, 58, 58, 0.2);
   }
+
   50% {
     text-shadow: 0 0 20px rgba(139, 58, 58, 0.8), 0 0 40px rgba(139, 58, 58, 0.4);
   }
@@ -274,16 +296,20 @@
 
 /* Floating slow animation */
 @keyframes float-slow {
+
   0%,
   100% {
     transform: translateY(0px) translateX(0px);
   }
+
   25% {
     transform: translateY(-20px) translateX(10px);
   }
+
   50% {
     transform: translateY(-30px) translateX(0px);
   }
+
   75% {
     transform: translateY(-20px) translateX(-10px);
   }
@@ -294,12 +320,15 @@
   0% {
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   90% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -422,4 +451,121 @@
 
 .hero-indicator-dot.active {
   @apply w-3 h-3 bg-white shadow-lg;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 2.2s linear infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn .6s ease-out;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp .6s ease-out forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scaleIn {
+  animation: scaleIn .6s ease-out;
+}
+
+@keyframes floatingSlow {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(25px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-floatingSlow {
+  animation: floatingSlow 6s ease-in-out infinite;
+}
+
+@keyframes floatingDelay {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: translateY(-25px) translateX(10px);
+  }
+
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.animate-floatingDelay {
+  animation: floatingDelay 7s ease-in-out infinite;
+}
+
+@keyframes pulseDot {
+  0% {
+    opacity: .4;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: .4;
+    transform: scale(0.8);
+  }
+}
+
+.animate-pulseDot {
+  animation: pulseDot .9s infinite;
 }
